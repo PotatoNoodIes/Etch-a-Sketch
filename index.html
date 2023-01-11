@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="images/x-icon" href="./images/pencil.png">
+    <title>Etch-a-Sketch-TOP</title>
+</head>
+<body>
+    <h1>ETCH-A-SKETCH</h1>
+    <div class="container">
+        <div class="user-exp">
+            <div id="buttons">
+                <input type="color" class="color-picker">
+                <button class="normal">Set Color</button>
+                <button class="clear">Toggle Clear</button>
+                <button class="rainbow">Toggle Rainbow</button>
+            </div>
+            <div id="slide-bar">
+                <input type="range" min="10" max="340" value="20" step="1" class="slider" id="gridSizeRange" dir="rtl">
+                <label>Grid size: </label>
+                <div class="container-grid-size">
+                    <span id="grid-columns-display">30x</span>
+                    <span id="grid-rows-display">30</span>
+                </div>
+            </div>
+        </div>
+        <div class="grid-cont">
+            <div class="square"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyright © Jose Luis Henriquez 2023</p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
